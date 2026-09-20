@@ -1,0 +1,15 @@
+# Operating system files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Editor settings
+.vscode/
+.idea/
+
+# Local deployment data
+.vercel/
+
+# Logs and temporary files
+*.log
+*.tmp

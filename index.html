@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Frontend Arena is a mission-based frontend learning project built with semantic HTML, responsive CSS and vanilla JavaScript." />
+  <title>Frontend Arena | Learn Less. Build More.</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="js/data.js" defer></script>
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Frontend Arena home"><span class="brand-mark" aria-hidden="true">FA</span>Frontend<span class="brand-light">Arena</span><span class="version">/ 01</span></a>
+      <button class="menu-toggle" id="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" hidden>Menu</button>
+      <nav id="primary-nav" class="primary-nav" aria-label="Primary"><a href="index.html" aria-current="page">Home</a><a href="learning.html">Learning</a><a href="about.html">About</a></nav>
+      <span class="header-status"><span class="status-dot"></span>Build mode</span>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <p class="eyebrow">Personal frontend learning system</p>
+          <h1>Learn less.<br /><span>Build more.</span></h1>
+          <p class="lead">A mission-based learning environment built while learning HTML, CSS and JavaScript—one practical feature at a time.</p>
+          <div class="hero-actions"><a class="button" href="learning.html">Explore learning path <span aria-hidden="true">→</span></a><a class="button button-secondary" href="missions/mission-10.html">View capstone</a></div>
+        </div>
+        <aside class="terminal-card" aria-label="Learning progress">
+          <div class="terminal-top"><i></i><i></i><i></i><span>arena-status.js</span></div>
+          <div class="terminal-body">
+            <p class="terminal-line"><strong>const</strong> journey = {<br />&nbsp;&nbsp;builtMissions: 10,<br />&nbsp;&nbsp;currentFocus: "JavaScript",<br />&nbsp;&nbsp;frameworks: "later"<br />};</p>
+            <div class="progress-label"><span>Your practice progress</span><strong><span data-progress-count>0</span> / <span data-progress-total>10</span></strong></div>
+            <div class="progress-track" role="progressbar" aria-label="Mission practice progress" aria-valuemin="0" aria-valuemax="10"><div class="progress-fill" data-progress-fill></div></div>
+            <div class="metric-grid"><div class="metric"><strong>10</strong><span>Missions built</span></div><div class="metric"><strong data-xp>0</strong><span>Practice XP</span></div></div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-heading"><div><p class="eyebrow">What this project demonstrates</p><h2>Fundamentals connected into real features.</h2></div><p>The project moves from meaningful page structure to live API data. Every stage has a practical outcome that can be opened, tested and explained.</p></div>
+        <div class="card-grid">
+          <article class="card"><span class="card-number">01 / Structure</span><h3>Semantic HTML</h3><p>Landmarks, heading order, forms, tables, labels and accessible native controls.</p></article>
+          <article class="card"><span class="card-number">02 / Interface</span><h3>Responsive CSS</h3><p>Variables, Flexbox, Grid, reusable components, focus states and mobile layouts.</p></article>
+          <article class="card"><span class="card-number">03 / Interaction</span><h3>DOM and events</h3><p>Selectors, event listeners, dynamic elements, feedback and form handling.</p></article>
+          <article class="card"><span class="card-number">04 / Data</span><h3>Arrays and objects</h3><p>Rendering, filtering and sorting interface data with readable functions.</p></article>
+          <article class="card"><span class="card-number">05 / Persistence</span><h3>localStorage</h3><p>Saving progress, preferences and useful articles across browser visits.</p></article>
+          <article class="card"><span class="card-number">06 / Network</span><h3>Async JavaScript</h3><p>Fetch API, async/await and visible loading, empty, success and error states.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt">
+      <div class="container">
+        <div class="section-heading"><div><p class="eyebrow">Mission preview</p><h2>A deliberate progression.</h2></div><p>Early missions establish structure and interaction. Later missions combine state, browser storage and external data.</p></div>
+        <div class="mission-preview">
+          <a class="preview-card" href="missions/mission-1.html"><span class="number">01</span><div><strong>HTML Foundations</strong><p>Build a correct document and understand its parts.</p></div><span class="arrow">→</span></a>
+          <a class="preview-card" href="missions/mission-4.html"><span class="number">04</span><div><strong>Responsive Layout</strong><p>Use Grid and a breakpoint to adapt a dashboard.</p></div><span class="arrow">→</span></a>
+          <a class="preview-card" href="missions/mission-8.html"><span class="number">08</span><div><strong>Search, Sort and Storage</strong><p>Derive a live view from an array of mission objects.</p></div><span class="arrow">→</span></a>
+          <a class="preview-card" href="missions/mission-9.html"><span class="number">09</span><div><strong>Live API Data</strong><p>Fetch developer articles and handle every UI state.</p></div><span class="arrow">→</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container panel capstone">
+        <div><p class="eyebrow">Mission 10 / capstone</p><h2>Developer Article Hub</h2><p>Search live developer articles, sort results, save useful resources and persist them with localStorage. It combines the main JavaScript patterns from the journey.</p><a class="button" href="missions/mission-10.html">Open the capstone</a></div>
+        <ol class="flow-list"><li><span>01</span>User submits a search</li><li><span>02</span>Fetch requests API data</li><li><span>03</span>State stores the response</li><li><span>04</span>Array methods create the view</li><li><span>05</span>DOM renders usable results</li></ol>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><div class="container footer-inner"><span>Frontend Arena · Built with HTML, CSS and JavaScript.</span><a href="about.html">Read the project story →</a></div></footer>
+  <p id="storage-notice" class="storage-notice" role="status" hidden></p>
+</body>
+</html>
