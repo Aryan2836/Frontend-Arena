@@ -1,0 +1,7 @@
+{
+  "rewrites": [
+    { "source": "/css/:path*", "destination": "/:path*" },
+    { "source": "/js/:path*", "destination": "/:path*" },
+    { "source": "/missions/:path*", "destination": "/:path*" }
+  ]
+}
