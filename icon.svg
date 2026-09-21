@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title">
+  <title id="title">Frontend Arena icon</title>
+  <rect width="512" height="512" rx="112" fill="#090e14"/>
+  <path d="M256 62 421 157v198L256 450 91 355V157Z" fill="#101820" stroke="#8ee3b0" stroke-width="18"/>
+  <path d="m180 190-60 66 60 66M332 190l60 66-60 66" fill="none" stroke="#86b7ff" stroke-width="24" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="m285 153-58 206" fill="none" stroke="#26343d" stroke-width="18" stroke-linecap="round"/>
+  <text x="256" y="292" fill="#8ee3b0" font-family="Arial, sans-serif" font-size="104" font-weight="800" text-anchor="middle">FA</text>
+  <circle cx="256" cy="404" r="10" fill="#8ee3b0"/>
+</svg>
